@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import Todo from "./components/Todo";
-
+// import Todo from "./components/Todo";
+import MainNavigation from "./components/layout/MainNavigation";
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetups from "./pages/NewMeetups";
 import Favorites from "./pages/Favorites";
@@ -8,6 +8,7 @@ import Favorites from "./pages/Favorites";
 function App() {
   return (
     <div>
+      <MainNavigation/>
       <Routes>
         <Route path="" element={<AllMeetupsPage />} />
         <Route path="/favorites" element={<Favorites />} />
